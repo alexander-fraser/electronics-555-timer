@@ -33,7 +33,7 @@ F 1 "220" H 8120 3105 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7980 3150 50  0001 C CNN
 F 3 "~" H 8050 3150 50  0001 C CNN
 	1    8050 3150
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R6
@@ -44,7 +44,7 @@ F 1 "220" H 8120 4005 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7980 4050 50  0001 C CNN
 F 3 "~" H 8050 4050 50  0001 C CNN
 	1    8050 4050
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R3
@@ -194,12 +194,10 @@ Wire Wire Line
 	4550 4600 4550 4850
 Wire Wire Line
 	7550 4500 7550 4600
-Wire Wire Line
-	7550 5000 7550 5150
 Connection ~ 7550 4600
 Wire Wire Line
 	7550 4600 7550 4700
-Connection ~ 7550 5550
+Connection ~ 7550 5450
 $Comp
 L power:GND #PWR011
 U 1 1 5F2BFE55
@@ -240,15 +238,13 @@ Wire Wire Line
 Wire Wire Line
 	6650 4000 6650 4600
 Wire Wire Line
-	6500 4200 6500 5550
-Wire Wire Line
 	4550 4000 4550 4300
 Wire Wire Line
 	8050 3650 8050 3800
 Connection ~ 8050 3800
 Wire Wire Line
 	8050 3800 8050 3900
-Text Label 6000 5700 0    50   ~ 0
+Text Label 6000 5750 0    50   ~ 0
 TRIGGER
 $Comp
 L power:+5V #PWR06
@@ -314,7 +310,7 @@ F 1 "220" H 3870 3305 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3730 3350 50  0001 C CNN
 F 3 "~" H 3800 3350 50  0001 C CNN
 	1    3800 3350
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR04
@@ -342,7 +338,7 @@ F 1 "SolderJumper_2_Open" H 4100 3666 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 4100 3800 50  0001 C CNN
 F 3 "~" H 4100 3800 50  0001 C CNN
 	1    4100 3800
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3950 3800 3800 3800
@@ -352,19 +348,14 @@ Wire Wire Line
 Wire Wire Line
 	5150 4200 5150 4250
 Wire Wire Line
-	7550 5550 7550 5700
-Connection ~ 7550 5700
-Wire Wire Line
 	6650 4600 6650 5150
 Connection ~ 6650 4600
 Connection ~ 7550 5150
-Wire Wire Line
-	7550 5150 7550 5550
 $Comp
-L Jumper:SolderJumper_2_Open JP3
+L Jumper:SolderJumper_2_Open JP2
 U 1 1 5F2FC22B
 P 7100 4600
-F 0 "JP3" H 7100 4805 50  0000 C CNN
+F 0 "JP2" H 7100 4805 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 7100 4714 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 7100 4600 50  0001 C CNN
 F 3 "~" H 7100 4600 50  0001 C CNN
@@ -374,10 +365,10 @@ $EndComp
 Wire Wire Line
 	7250 4600 7550 4600
 $Comp
-L Jumper:SolderJumper_2_Open JP4
+L Jumper:SolderJumper_2_Open JP3
 U 1 1 5F2FCB39
 P 7100 5150
-F 0 "JP4" H 7100 5355 50  0000 C CNN
+F 0 "JP3" H 7100 5355 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 7100 5264 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 7100 5150 50  0001 C CNN
 F 3 "~" H 7100 5150 50  0001 C CNN
@@ -389,30 +380,30 @@ Wire Wire Line
 Wire Wire Line
 	6500 3800 8050 3800
 Wire Wire Line
-	6000 5700 7550 5700
+	6000 5750 6950 5750
 Wire Wire Line
-	6500 5550 6950 5550
+	6500 5450 6950 5450
 Wire Wire Line
 	6650 5150 6950 5150
 Wire Wire Line
 	6650 4600 6950 4600
 Wire Wire Line
-	7550 5700 7550 5800
+	7550 5750 7550 5800
 Wire Wire Line
 	7550 6100 7550 6250
 $Comp
-L Jumper:SolderJumper_2_Open JP5
+L Jumper:SolderJumper_2_Open JP4
 U 1 1 5F3182F6
-P 7100 5550
-F 0 "JP5" H 7100 5755 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 7100 5664 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 7100 5550 50  0001 C CNN
-F 3 "~" H 7100 5550 50  0001 C CNN
-	1    7100 5550
+P 7100 5450
+F 0 "JP4" H 7100 5655 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 7100 5564 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 7100 5450 50  0001 C CNN
+F 3 "~" H 7100 5450 50  0001 C CNN
+	1    7100 5450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7250 5550 7550 5550
+	7250 5450 7550 5450
 $Comp
 L Connector:Conn_01x02_Male J1
 U 1 1 5F2FB705
@@ -428,23 +419,19 @@ Wire Wire Line
 	5150 4200 5500 4200
 Wire Wire Line
 	4250 3800 4550 3800
-Text Label 4550 2750 1    50   ~ 0
+Text Label 4550 2950 1    50   ~ 0
 TRIGGER
-Wire Wire Line
-	4550 3800 4550 3200
 $Comp
-L Jumper:SolderJumper_2_Open JP2
+L Jumper:SolderJumper_2_Open JP5
 U 1 1 5F2E91E4
-P 4550 3050
-F 0 "JP2" V 4596 2962 50  0000 R CNN
-F 1 "SolderJumper_2_Open" V 4505 2962 50  0000 R CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 4550 3050 50  0001 C CNN
-F 3 "~" H 4550 3050 50  0001 C CNN
-	1    4550 3050
-	0    -1   -1   0   
+P 7100 5750
+F 0 "JP5" H 7200 5900 50  0000 R CNN
+F 1 "SolderJumper_2_Open" H 7500 5850 50  0000 R CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 7100 5750 50  0001 C CNN
+F 3 "~" H 7100 5750 50  0001 C CNN
+	1    7100 5750
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4550 2900 4550 2750
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5F320086
@@ -472,4 +459,17 @@ $EndComp
 Wire Wire Line
 	4550 3800 5500 3800
 Connection ~ 4550 3800
+Wire Wire Line
+	7250 5750 7550 5750
+Wire Wire Line
+	4550 2950 4550 3800
+Wire Wire Line
+	6500 4200 6500 5450
+Wire Wire Line
+	7550 5150 7550 5450
+Wire Wire Line
+	7550 5450 7550 5750
+Wire Wire Line
+	7550 5000 7550 5150
+Connection ~ 7550 5750
 $EndSCHEMATC
