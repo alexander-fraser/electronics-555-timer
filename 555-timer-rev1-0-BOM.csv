@@ -1,0 +1,10 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"U1";"SOIC-8_3.9x4.9mm_P1.27mm";1;"SA555D";;;
+2;"SW2,SW1";"SW_SPST_PTS647";2;"SW_Push";;;
+3;"R6,R5,R3,R2,R1";"R_1206_3216Metric_Pad1.42x1.75mm_HandSolder";5;"220";;;
+4;"R4";"R_1206_3216Metric_Pad1.42x1.75mm_HandSolder";1;"1M";;;
+5;"JP4,JP3,JP2,JP5,JP1";"SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm";5;"SolderJumper_2_Open";;;
+6;"J1";"PinHeader_1x02_P2.54mm_Vertical";1;"Conn_01x02_Male";;;
+7;"D2,D1";"LED_1206_3216Metric_Castellated";2;"LED";;;
+8;"C2";"C_1206_3216Metric_Pad1.42x1.75mm_HandSolder";1;"1uF";;;
+9;"C1";"C_1206_3216Metric_Pad1.42x1.75mm_HandSolder";1;"100pF";;;
